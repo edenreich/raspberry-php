@@ -13,7 +13,7 @@ Raspberry PI docker image for running PHP7.0-FPM.
 
 - docker-cli
 
-## Installation
+## Usage
 
 On the command line:
 ```sh
