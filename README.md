@@ -15,18 +15,17 @@ Raspberry PI image for running PHP7.0-FPM.
 
 ## Installation
 
-Clone the repository:
-```sh
-git clone https://github.com/edenreich/raspberry-php.git && cd raspberry-php
-```
-
-And run:
+run:
 ```sh
 docker run -it -d -p 9000:9000 --name php -w /var/www/html edenr/raspberry-php
 ```
 
 To enter:
 ```sh
-docker exec -it php
+docker exec -it php bash
 ```
+
+## Links
+
+- https://hub.docker.com/r/edenr/raspberry-php/
 
