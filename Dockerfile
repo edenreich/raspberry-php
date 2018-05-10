@@ -54,6 +54,13 @@ RUN apt-get remove -y --purge software-properties-common \
 	&& mkdir -p /var/www/html \
 	&& chown -R www-data:www-data /var/www
 
+# Create a directory so php-fpm can store the pid
+RUN mkdir /run/php
+
+# Add PHP-FPM configurations
+ADD config/php-fpm.conf /etc/php/7.0/fpm/php-fpm.conf 
+ADD config/www.conf /etc/php/7.0/fpm/pool.d/www.conf
+
 EXPOSE 9000
 CMD ["php-fpm7.0"]
 
