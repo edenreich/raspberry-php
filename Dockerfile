@@ -44,7 +44,7 @@ RUN apt-get update && apt-get install -y \
 	php7.0-opcache \
 	--no-install-recommends
 
-# Install composer package maanager
+# Install composer package manager
 RUN php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer
 
 # Cleanup and permissions
