@@ -2,7 +2,7 @@
 
 # Raspberry Pi PHP
 
-Raspberry PI docker image for running PHP7.0-FPM.
+Raspberry PI docker image container running PHP7.0-FPM.
 
 ## Installed
 - Git
